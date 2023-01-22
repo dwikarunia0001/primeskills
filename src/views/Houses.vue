@@ -1,18 +1,18 @@
 <template>
-    <div class="col-9 position-absolute end-0 me-5">
-    <!--INPUT DATA-->
-    <section>
+    <div class="text-white">
+        <!--INPUT DATA-->
+        <section>
 
-    </section>
+        </section>
 
-    <!--DISPLAY DATA-->
-    <section>
-        <h1>TEST</h1>
-        <ol v-for="(item, index) in g$list" :key="index" class="text-capitalize">
-            <li>{{ item.name }}</li>
-        </ol>
-    </section>
-</div>
+        <!--DISPLAY DATA-->
+        <section>
+            <p>TEST</p>
+            <ol v-for="(item, index) in g$list" :key="index" class="text-capitalize">
+                <li>{{ item.name }}</li>
+            </ol>
+        </section>
+    </div>
 </template>
 
 <script>

@@ -1,17 +1,23 @@
 const houses = {
-    path: "/home",
+    path: "/",
     name: "Home",
+    // component: () => import('@/views/Welcome.vue'),
     children: [
+        {
+            path: "",
+            name: "",
+            component: () => import('@/views/Home.vue'),
+        },
+        {
+            path: "welcome",
+            name: "Welcome",
+            component: () => import('@/views/Welcome.vue'),
+        },
         {
             path: "houses",
             name: "Houses",
             component: () => import('@/views/Houses.vue'),
-        },
-        {
-            path: "/auth/signup",
-            name: "Signup",
-            component: () => import('@/views/Auth/Signup.vue'),
-        },
+        }
     ],
 };
 
