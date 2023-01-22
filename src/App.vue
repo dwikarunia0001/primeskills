@@ -14,8 +14,8 @@ Coded by www.creative-tim.com
 -->
 <template>
   <main
-    class="main-content position-relative" 
-    style="background-color: black;"
+    class="bg-dark p-0 m-0" 
+    style="min-height: 100%;width:100%"
   >
     <!-- nav -->
     
@@ -56,3 +56,6 @@ export default {
   }
 };
 </script>
+<style>
+
+</style>
