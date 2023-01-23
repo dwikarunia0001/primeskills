@@ -3,25 +3,17 @@
         <!--INPUT DATA-->
         <section>
            <img class="mx-auto" src="../assets/img/sorting-hat.png" alt="sorting-hat" width="230" height="200">
-            <form action="#" class="traits text-white">
+            <form class="traits text-white">
                 <p>What do people often say about you?</p>
                 <div v-for="(item, index) in g$list" :key="index" class="text-capitalize">
-                <input type="radio" :id="item.name" name="traits" :value="item.name">
+                <input v-model="traitsValue" type="radio" :id="item.name" name="traits" :value="item.name">
                 <label :for="item.name" class="text-white text-wrap">{{item.traits.map(x => x.name).join(', ')}}</label><br>
                 </div>
-                <input type="submit" value="Submit" class="btn-warning px-4 mt-2" style="width: 100%">
+                <router-link :to="{ path: '/houses/' + traitsValue }">
+                <button class="btn-warning px-4 mt-2" style="width: 100%">Submit</button>
+                </router-link>
             </form>
         </section>
-        <!--DISPLAY DATA
-        <section>
-            <p>TEST</p>
-            <div v-for="(item, index) in g$list" :key="index" class="text-capitalize">
-                
-                    <p>{{ item.name }}</p>
-                
-            </div>
-        </section>
-        -->
     </main>
 </template>
 
@@ -32,6 +24,11 @@ import { mapActions, mapState } from 'pinia'
 import d$houses from '@/stores/houses.js'; 
     export default {
         name: 'Houses',
+        data() { 
+            return {
+                traitsValue: ''
+            }
+        },
         computed: {
             ...mapState(d$houses, ['g$list']),
         },
@@ -43,7 +40,14 @@ import d$houses from '@/stores/houses.js';
                 } catch(e) {
                     console.error('methods getList error', r);
                 }
-            }
+            },
+            async submit() {
+                try {
+                    router.push({ path: `/${this.traitsValue}` })
+                } catch(e) {
+                    console.error('methods getList error', r);
+                }
+            },
         },
         async created() {
             await this.getList();

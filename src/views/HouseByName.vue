@@ -34,7 +34,7 @@
                             </div>
                             <div v-if="this.$route.path == '/houses/Hufflepuff'">
                                 <div class="card mx-3 my-5 border-5 p-2" style="width: 18rem;background-color: #E9AC2D;border-color: black;">
-                                    <img src="../assets/img/h-logo.png" class="card-img-top mx-auto d-block" alt="Gryffindor" style="width: 10rem;">
+                                    <img src="../assets/img/h-logo.png" class="card-img-top mx-auto d-block" alt="Hufflepuff" style="width: 10rem;">
                                     <div class="card-body">
                                         <h3 class="card-title text-white fw-bolder">Hufflepuff</h3>
                                         <p class="card-text text-xs">Hardworking, Patience, Loyalty, Just, Fairness, Modesty</p>
