@@ -3,13 +3,18 @@
     <main class="position-absolute top-50 start-50 translate-middle ">
         
         <div class="container">
-            <div class="row justify-content-center">
-            <img src="../assets/img/minerva-sorting-hat.webp" alt="minerva-sorting-hat" width="160" height="180" class="col-lg-4 col-sm-7 mx-auto d-block rounded-circle">
-            <p class="col-lg-10 col-sm-8 text-start mt-4">"Welcome to Hogwarts. </p>
-            <p class="col-lg-10 col-sm-8 text-start ">In a moment, you will pass through these doors...but before you can take your seats, you must be sorted into your houses. They are #Gryffindor, #Hufflepuff, #Ravenclaw, and #Slytherin. While here, your house is, in many ways, your family."</p>
+            <div class="row justify-content-center p-4 text-dark" style="background-color: #E8DCB8;">
+            <div>
+              <img src="../assets/img/minerva-sorting-hat.webp" alt="minerva-sorting-hat" width="100" height="110" class="mx-auto d-block rounded-circle">
             </div>
+            <div class="col-lg-10 col-md-6">
+              <p class="text-start mb-3 mt-3">"Congratulations and Welcome to Hogwarts, <br/> Before you can take your seats, you must be sorted into your houses. "</p>
+            </div>
+          </div>
         </div>   
-
+        <section class=" text-white text-center mt-5">
+            <a href="/houses" class="text-decoration-none text-white">Continue</a>
+        </section>
     </main>
   </div>
 </template>

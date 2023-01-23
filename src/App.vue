@@ -14,8 +14,8 @@ Coded by www.creative-tim.com
 -->
 <template>
   <main
-    class="bg-dark p-0 m-0" 
-    style="min-height: 100%;width:100%"
+  class="bg-dark" 
+    style="min-height: 100vh;width:100%;height: auto;"
   >
     <!-- nav -->
     
