@@ -18,6 +18,12 @@ const houses = {
             name: "Houses",
             component: () => import('@/views/Houses.vue'),
         }
+        ,
+        {
+            path: "houses/:name",
+            name: "Houses by Name",
+            component: () => import('@/views/HouseByName.vue'),
+        }
     ],
 };
 

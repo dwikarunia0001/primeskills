@@ -27,7 +27,7 @@
 
 <script>
 import { mapActions, mapState } from 'pinia'
-import {RouterLink} from 'vue-router'
+// import {RouterLink} from 'vue-router'
 // contoh import stores todo
 import d$houses from '@/stores/houses.js'; 
     export default {
