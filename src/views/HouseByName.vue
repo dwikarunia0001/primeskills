@@ -3,9 +3,9 @@
     <main class="position-absolute top-50 start-50 translate-middle ">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col justify-content-center align-items-center text-center">
                     
-                    <div class="card text-center" >
+                    <div class="card text-center justify-content-center align-items-center text-center" >
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
                                 <li class="nav-item" v-for="(item, index) in g$list" :key="index">
