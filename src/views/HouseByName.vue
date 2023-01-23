@@ -15,7 +15,7 @@
                         </div>
                         <div class="text-white">
                             <div v-if="this.$route.path == '/houses/Gryffindor'">
-                                <div class="card mx-3 my-5 border-5 p-2" style="width: 18rem;background-color: #FF2400;border-color: #AA6C39;">
+                                <div class="card mx-3 my-5 border-5 p-2" style="width: 18rem;background-color: #FF2400;border-color: #FFD700;">
                                     <img src="../assets/img/g-logo.png" class="card-img-top mx-auto" alt="Gryffindor" style="width: 10rem;">
                                     <div class="card-body">
                                         <h3 class="card-title text-white fw-bolder">Gryffindor</h3>
