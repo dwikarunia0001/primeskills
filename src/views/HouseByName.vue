@@ -24,19 +24,31 @@
                                 </div>
                             </div>
                             <div v-if="this.$route.path == '/houses/Ravenclaw'">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">THIS Ravenclaw HOUSES</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card mx-3 my-5 border-5 p-2" style="width: 18rem;background-color: #082664;border-color: #CD7F32;">
+                                    <img src="../assets/img/r-logo.png" class="card-img-top mx-auto" alt="Gryffindor" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-white fw-bolder">Ravenclaw</h3>
+                                        <p class="card-text text-xs">Learning, Acceptance, Inteligence, Wisdom, Wit, Creativity</p>
+                                    </div>
+                                </div>
                             </div>
                             <div v-if="this.$route.path == '/houses/Hufflepuff'">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">THIS Hufflepuff HOUSES</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card mx-3 my-5 border-5 p-2" style="width: 18rem;background-color: #E9AC2D;border-color: black;">
+                                    <img src="../assets/img/h-logo.png" class="card-img-top mx-auto d-block" alt="Gryffindor" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-white fw-bolder">Hufflepuff</h3>
+                                        <p class="card-text text-xs">Hardworking, Patience, Loyalty, Just, Fairness, Modesty</p>
+                                    </div>
+                                </div>
                             </div>
                             <div v-if="this.$route.path == '/houses/Slytherin'">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">THIS Slytherin HOUSES</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card mx-3 my-5 border-5 p-2" style="width: 18rem;background-color: #1a472a;border-color: #C0C0C0;">
+                                    <img src="../assets/img/s-logo.png" class="card-img-top mx-auto d-block" alt="Slytherin" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-white fw-bolder">Slytherin</h3>
+                                        <p class="card-text text-xs">Hardworking, Patience, Loyalty, Just, Fairness, Modesty</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
